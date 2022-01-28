@@ -1,42 +1,42 @@
 
+import random
+from telnetlib import theNULL
+from tkinter import messagebox
+from typing import List
 
-
-#
-# todo: write some Python code here to satisfy the exercise objectives
-# ... https://github.com/prof-rossetti/intro-to-python/blob/main/exercises/rock-paper-scissors/README.md
-#
-#Make a plan before we write any python code: remind us of our objectives and then figure out the action plan
-
-# ASK FOR USER INPUT
-# docs.python.org/3/library/functions.html#input
-# Use an input function to get user input
-# input() wants the textual prompt that will be shown to the user --> use quotes to pass a string data type 
-# example input("What is your favourite colour")
-# this will give a textbox for user to input their answer
-# to use the value that the user inputs, you must assign a variable to the user's input 
-# example x = input("What is your favourite colour")
-# print(x)
-# print(type(x))
-
-U = input("Please choose one of : 'rock' , 'paper' or 'scissors' : ")
+U = input("Please choose one of : 'rock' , 'paper' or 'scissors' : ").lower()
 print("USER CHOSE:", U)
-
-
-
-
-
-
-
+possible_choices =  ["rock","paper","scissors"]
 # VALIDATIONS
-
-
+if U not in possible_choices:
+    print("Error: Please choose 'rock, 'paper' or 'scissors' only.")
+    exit()
 
 # COMPUTER CHOICE
-
-
+Computer_Choice = random.choice(possible_choices)
+print ( "The computer chose", Computer_Choice)
 
 # DETERMINE THE WINNER
+if U == Computer_Choice:  
+    print("It's a tie")
 
+if U == "rock" & Computer_Choice =="paper":
+    print("Computer wins!")
+
+if U == "paper" & Computer_Choice=="rock":
+    print("You win!")
+
+if U == "rock" & Computer_Choice =="scissors":
+    print("You win!")
+
+if U == "scissors" & Computer_Choice =="rock":
+    print("Computer wins!")
+
+if U == "paper" & Computer_Choice=="scissors":
+    print("Computer wins!")
+
+if U == "scissors" & Computer_Choice=="paper":
+    print("You win!")
 
 
 # FINAL RESULTS 
