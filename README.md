@@ -10,6 +10,7 @@ Create a virtual environment:
 conda create -n rps-env python=3.8
 ```
 
+
 Activate the virtual environment:
 
 ```sh
@@ -21,6 +22,8 @@ Install package dependencies (mainly for testing):
 ```sh
 pip install -r requirements.txt
 ```
+PLAYER_NAME="Jon Snow" python game.py
+
 
 ## Usage
 

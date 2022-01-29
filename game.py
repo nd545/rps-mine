@@ -1,4 +1,5 @@
-
+import os
+player_name = os.getenv("PLAYER_NAME", default="Player One")
 import random
 from telnetlib import theNULL
 from tkinter import messagebox
