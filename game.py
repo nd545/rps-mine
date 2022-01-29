@@ -5,7 +5,7 @@ from telnetlib import theNULL
 from tkinter import messagebox
 from typing import List
 
-print("Welcome to Rock, Paper, Scissors Game!")
+print("Welcome to Rock, Paper, Scissors Game,", player_name, "!")
 print("------------------------------------------")
 
 # VARIABLE ASSIGNMENTS
