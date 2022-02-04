@@ -82,6 +82,8 @@ if __name__ == "__main__":
     if U == "scissors" and Computer_Choice == "paper":
         result = "You win, yay!"
 
+    determine_winner(U, Computer_Choice)
+
     # FINAL RESULTS
     print("User chose:", U, "\n"  "Computer Chose:", Computer_Choice)
     print("-----------------------")
