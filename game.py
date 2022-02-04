@@ -32,8 +32,7 @@ def determine_winner(choice_1, choice_2):
 
 
 if __name__ == "__main__":
-
-    print("WELCOME TO MY ROCK PAPER SCISSORS GAME!")
+    
 
     # ...
 
